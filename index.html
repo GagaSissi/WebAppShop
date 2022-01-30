@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAppShop
+    </title>
+</head>
+<body>
+    <article>
+        <h1>WebAppShop</h1>
+    <form action="results.html" method="get">
+      <section>  <label for="Vorname"></label>
+        <input type="text" name="Vorname" id="Vorname" placeholder="Vorname" required>
+    </section>
+    <section>  <label for="Nachname"></label>
+        <input type="text" name="Nachname" id="Nachname" placeholder="Nachname" required>
+    </section>
+    <section>  <label for="Straße"></label>
+        <input type="text" name="Straße" id="Straße" placeholder="Beispielstraße 0815" required>
+    </section>
+    <section>  <label for="PLZ"></label>
+        <input type="text" pattern="^[0-9]{5}$" required value="" name="PLZ" id="PLZ"  placeholder="Postleitzahl">
+    </section>
+    <section>  <label for="Stadt"></label>
+        <input type="text" name="Stadt" id="Stadt" placeholder="Beispielstadt" required>
+    </section>
+    <section>  <label for="email"></label>
+        <input type="email" name="E-Mail" id="email" placeholder="Beispiel@mail.de" required>
+    </section>
+    <section>  
+        <p>In welcher Größe benötigen Sie ihr T-Shirt?</p>
+        <label for="GroeßeOption"></label>
+        <select name="GroeßeOption" id="GroeßeOption" required>
+            <option value="">Bitte auswählen</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </section>
+    <section>  <label>
+            <a href="https://www.sva.de/de/datenschutzerklaerung">Datenschutzerklärung</a>
+    </label>
+        <input type="checkbox" required>
+    </section>
+    <section>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </section>
+    </form>
+</article>
+</body>
+</html>
